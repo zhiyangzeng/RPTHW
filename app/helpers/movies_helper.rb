@@ -5,6 +5,6 @@ module MoviesHelper
   end
 
   def highlight(column)
-  	params[:sort_by]==column.to_s ? 'hilite' : nil
+  	session[:sort_by]==column.to_s ? 'hilite' : nil
   end
 end
